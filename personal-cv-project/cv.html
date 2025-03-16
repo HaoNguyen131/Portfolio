@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nguyễn Phi Hào</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            background: url(./bbb.png) no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            margin: 0;
+        }
+        .sidebar {
+            width: 250px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            text-align: center;
+            background: #888;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .sidebar ul li:hover, .active {
+            background: #555;
+            border-radius: 5px;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px;
+        }
+        .hero {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 200px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            max-width: 80%;
+            width: 100%;
+        }
+        .hero img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero-text h1 {
+            font-size: 28px;
+        }
+        .buttons .btn {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn.primary {
+            background: #f77;
+        }
+        .btn.danger {
+            background: #d33;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Hào's Portfolio</h2>
+        <ul>
+            <li class="active">🏠 Home</li>
+            <li>🧑 About</li>
+            <li>✏️ Portfolio</li>
+            <li>📷 Personal</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="hero">
+            <img src="image.png" alt="Nguyễn Phi Hào">
+            <div class="hero-text">
+                <h1>NGUYỄN PHI HÀO</h1>
+                <p>
+                    VUI LÒNG DÀNH MỘT NGÀY ĐỂ XEM LẠI LÝ LỊCH CỦA TÔI NẾU BẠN ĐANG CÂN NHẮC TÔI ĐỂ TUYỂN DỤNG. NẾU KHÔNG, HÃY XEM DANH MỤC CỦA TÔI ĐỂ TÌM HIỂU THÊM VỀ KỸ NĂNG VÀ KINH NGHIỆM CỦA TÔI. KHI BẠN ĐÃ CÓ CƠ HỘI XEM LẠI, VUI LÒNG ĐỪNG NGẦN NGẠI LIÊN HỆ VỚI TÔI. CẢM ƠN BẠN ĐÃ DÀNH THỜI GIAN XEM LẠI TRÌNH ĐỘ CỦA TÔI
+                </p>
+                <div class="buttons">
+                    <button class="btn">Read More</button>
+                    <button class="btn primary">My Resume</button>
+                    <button class="btn danger">Download PDF File</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
